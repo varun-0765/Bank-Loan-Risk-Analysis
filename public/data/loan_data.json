@@ -1,0 +1,22 @@
+[
+  { "customer_id": "CUST-001", "income": 92000, "credit_score": 758, "loan_amount": 180000, "debt": 25000, "collateral_value": 280000, "is_default": false },
+  { "customer_id": "CUST-002", "income": 54000, "credit_score": 645, "loan_amount": 210000, "debt": 29000, "collateral_value": 225000, "is_default": true },
+  { "customer_id": "CUST-003", "income": 120000, "credit_score": 790, "loan_amount": 320000, "debt": 41000, "collateral_value": 470000, "is_default": false },
+  { "customer_id": "CUST-004", "income": null, "credit_score": 680, "loan_amount": 160000, "debt": 22000, "collateral_value": 220000, "is_default": false },
+  { "customer_id": "CUST-005", "income": 46000, "credit_score": 610, "loan_amount": 140000, "debt": 24000, "collateral_value": 150000, "is_default": true },
+  { "customer_id": "CUST-006", "income": 78000, "credit_score": null, "loan_amount": 250000, "debt": 36000, "collateral_value": 300000, "is_default": false },
+  { "customer_id": "CUST-007", "income": 99000, "credit_score": 720, "loan_amount": null, "debt": 33000, "collateral_value": 350000, "is_default": false },
+  { "customer_id": "CUST-008", "income": 38000, "credit_score": 590, "loan_amount": 125000, "debt": 26000, "collateral_value": 130000, "is_default": true },
+  { "customer_id": "CUST-009", "income": 67000, "credit_score": 700, "loan_amount": 190000, "debt": 28000, "collateral_value": 230000, "is_default": false },
+  { "customer_id": "CUST-010", "income": 84000, "credit_score": 735, "loan_amount": 270000, "debt": 34000, "collateral_value": 360000, "is_default": false },
+  { "customer_id": "CUST-011", "income": 51000, "credit_score": 625, "loan_amount": 155000, "debt": 27000, "collateral_value": 170000, "is_default": true },
+  { "customer_id": "CUST-012", "income": 102000, "credit_score": 770, "loan_amount": 300000, "debt": 39000, "collateral_value": 450000, "is_default": false },
+  { "customer_id": "CUST-013", "income": 61000, "credit_score": 675, "loan_amount": 175000, "debt": 31000, "collateral_value": 210000, "is_default": false },
+  { "customer_id": "CUST-014", "income": 47000, "credit_score": 605, "loan_amount": 145000, "debt": 25000, "collateral_value": 155000, "is_default": true },
+  { "customer_id": "CUST-015", "income": 131000, "credit_score": 805, "loan_amount": 360000, "debt": 45000, "collateral_value": 520000, "is_default": false },
+  { "customer_id": "CUST-016", "income": 88000, "credit_score": 715, "loan_amount": 245000, "debt": 36000, "collateral_value": 305000, "is_default": false },
+  { "customer_id": "CUST-017", "income": 43000, "credit_score": 575, "loan_amount": 118000, "debt": 25000, "collateral_value": 124000, "is_default": true },
+  { "customer_id": "CUST-018", "income": 74000, "credit_score": 695, "loan_amount": 220000, "debt": 32000, "collateral_value": 270000, "is_default": false },
+  { "customer_id": "CUST-019", "income": 95000, "credit_score": 748, "loan_amount": 285000, "debt": 37000, "collateral_value": 390000, "is_default": false },
+  { "customer_id": "CUST-020", "income": 56000, "credit_score": 640, "loan_amount": 165000, "debt": 30000, "collateral_value": 175000, "is_default": true }
+]
