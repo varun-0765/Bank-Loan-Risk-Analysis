@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import type { EnrichedLoanRecord } from "@/lib/types";
 import { RiskBadge } from "@/components/risk-badge";
+import { formatCurrency } from "@/lib/utils";
 
 type CustomerTableProps = {
   rows: EnrichedLoanRecord[];
@@ -45,8 +46,8 @@ export function CustomerTable({ rows }: CustomerTableProps) {
             {filtered.map((row) => (
               <tr key={row.customerId} className="border-b border-slate-100 text-slate-800">
                 <td className="px-2 py-2 font-medium">{row.customerId}</td>
-                <td className="px-2 py-2">${row.income.toLocaleString()}</td>
-                <td className="px-2 py-2">${row.loanAmount.toLocaleString()}</td>
+                <td className="px-2 py-2">{formatCurrency(row.income)}</td>
+                <td className="px-2 py-2">{formatCurrency(row.loanAmount)}</td>
                 <td className="px-2 py-2">{row.creditScore}</td>
                 <td className="px-2 py-2">{row.riskScore}</td>
                 <td className="px-2 py-2">

@@ -2,6 +2,7 @@
 
 import { CartesianGrid, Legend, ResponsiveContainer, Scatter, ScatterChart, Tooltip, XAxis, YAxis } from "recharts";
 import type { EnrichedLoanRecord } from "@/lib/types";
+import { formatCurrency, formatCurrencyCompact } from "@/lib/utils";
 
 type IncomeLoanScatterProps = {
   rows: EnrichedLoanRecord[];
@@ -22,16 +23,16 @@ export function IncomeLoanScatter({ rows }: IncomeLoanScatterProps) {
           <XAxis
             dataKey="income"
             name="Income"
-            tickFormatter={(value: number) => `$${Math.round(value / 1000)}k`}
+            tickFormatter={(value: number) => formatCurrencyCompact(value)}
           />
           <YAxis
             dataKey="loanAmount"
             name="Loan Amount"
-            tickFormatter={(value: number) => `$${Math.round(value / 1000)}k`}
+            tickFormatter={(value: number) => formatCurrencyCompact(value)}
           />
           <Tooltip
             cursor={{ strokeDasharray: "3 3" }}
-            formatter={(value) => `$${Number(value ?? 0).toLocaleString()}`}
+            formatter={(value) => formatCurrency(Number(value ?? 0))}
           />
           <Legend />
           <Scatter name="Non-Default" data={nonDefaultRows} fill="#22c55e" />

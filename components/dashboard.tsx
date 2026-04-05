@@ -3,6 +3,7 @@ import { KpiCard } from "@/components/kpi-card";
 import { RiskDistributionChart } from "@/components/risk-distribution-chart";
 import { IncomeLoanScatter } from "@/components/income-loan-scatter";
 import { CustomerTable } from "@/components/customer-table";
+import { formatCurrency } from "@/lib/utils";
 
 type DashboardProps = {
   metrics: DashboardMetrics;
@@ -24,7 +25,7 @@ export function Dashboard({ metrics, rows }: DashboardProps) {
         <KpiCard label="Approval Rate" value={`${metrics.approvalRate.toFixed(1)}%`} />
         <KpiCard
           label="Total Default Risk"
-          value={`$${Math.round(metrics.totalDefaultRisk).toLocaleString()}`}
+          value={formatCurrency(metrics.totalDefaultRisk)}
         />
       </section>
 

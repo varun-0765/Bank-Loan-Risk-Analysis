@@ -76,6 +76,10 @@ export const scoreRecord = (record: CleanLoanRecord): EnrichedLoanRecord => {
   const debtToIncome = record.debt / record.income;
   const loanToValue = record.loan_amount / record.collateral_value;
 
+  // Weighted model:
+  // - Credit score (40%): strongest predictor of repayment behavior
+  // - Debt-to-income (35%): measures affordability pressure
+  // - Loan-to-value (25%): proxy for collateral buffer
   const riskScore = Math.round(
     (dtiRisk(debtToIncome) * 0.35 +
       creditRisk(record.credit_score) * 0.4 +
