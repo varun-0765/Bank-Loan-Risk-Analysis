@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "clean:data": "node scripts/clean-loan-data.mjs"
   },
   "dependencies": {
     "next": "16.2.2",
